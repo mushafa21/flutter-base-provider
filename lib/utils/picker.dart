@@ -329,7 +329,7 @@ class Picker{
     }
 
   }
-  
+
   /** Date / Time Picker */
   Future<DateTime?> selectDate(BuildContext context, DateTime dateTime,
       {DateTime? startDate}) async {
@@ -436,15 +436,18 @@ class Picker{
   }
 
   /** Location Picker */
-  Future<LatLng?> getCurrentLocation() async{
+
+  Future<LatLng?> getCurrentLocation({bool repeat = true}) async{
     if(await PermissionHandler().askPermission(location: true)){
       Location location = Location();
       final data = await location.getLocation();
       return LatLng(data.latitude ?? 0, data.longitude ?? 0);
-    } else{
-      return null;
+    } else if(repeat){
+      return await getCurrentLocation(repeat: false);
     }
+    return null;
   }
+
   Future<LatLng?> locationPicker(BuildContext context,LatLng initialLocation) async {
     final location = await Navigator.push(context, MaterialPageRoute(builder: (context)=> LocationPickerScreen(startLocation: initialLocation,)));
     if(location != null){
