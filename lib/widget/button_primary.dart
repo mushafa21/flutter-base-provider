@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../style/custom_color.dart';
-import '../style/custom_text_style.dart';
+import '../styles/custom_colors.dart';
+import '../styles/custom_text_styles.dart';
 
 class ButtonPrimary extends StatelessWidget {
   final Function() click;
@@ -31,7 +31,7 @@ class ButtonPrimary extends StatelessWidget {
       padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: verticalPadding ?? 10.h,horizontal: horizontalPadding ??  30.w)),
       minimumSize: MaterialStateProperty.all(Size(width ?? double.infinity, height ?? 55.h)),
       backgroundColor:
-      MaterialStateProperty.all(active ? color ?? CustomColor.primary500 : CustomColor.gray100),
-    ), child : Text(teks, style: textStyle ?? CustomTextStyle.semiBold12.copyWith(color: textColor ?? (active ? CustomColor.white:CustomColor.gray500)),),);
+      MaterialStateProperty.all(active ? color ?? CustomColors.primary500 : CustomColors.gray100),
+    ), child : Text(teks, style: textStyle ?? CustomTextStyles.semiBold12.copyWith(color: textColor ?? (active ? CustomColors.white:CustomColors.gray500)),),);
   }
 }

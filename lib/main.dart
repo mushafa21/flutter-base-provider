@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base_project/style/custom_color.dart';
+import 'package:flutter_base_project/styles/custom_colors.dart';
 import 'package:flutter_base_project/ui/home/home_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -87,10 +87,10 @@ class MyApp extends StatelessWidget {
               toolbarHeight: 60.h,
               iconTheme: IconThemeData(
                 size: 30.r,
-                color: CustomColor.dark,
+                color: CustomColors.dark,
               ),
             ),
-            primaryColor: CustomColor.primary500,
+            primaryColor: CustomColors.primary500,
             primarySwatch: Colors.blue,
             fontFamily: 'Jakarta',),
           home:  HomePage(),

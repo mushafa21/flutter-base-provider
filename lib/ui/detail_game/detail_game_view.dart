@@ -3,7 +3,7 @@ import 'package:flutter_base_project/utils/helper.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
-import '../../style/custom_text_style.dart';
+import '../../styles/custom_text_styles.dart';
 import '../../widget/button_primary.dart';
 import '../../widget/image_view.dart';
 import 'detail_game_provider.dart';
@@ -23,7 +23,7 @@ class DetailGamePage extends StatelessWidget {
 
           AppBar appBar(){
             return AppBar(
-              title: Text("Detail Game",style: CustomTextStyle.semiBold14,),
+              title: Text("Detail Game",style: CustomTextStyles.semiBold14,),
             );
           }
 
@@ -35,9 +35,9 @@ class DetailGamePage extends StatelessWidget {
               padding: EdgeInsets.all(15.w),
               child: Column(
                 children: [
-                  Text(provider.dataGame?.name ?? "",style: CustomTextStyle.semiBold14,),
+                  Text(provider.dataGame?.name ?? "",style: CustomTextStyles.semiBold14,),
                   SizedBox(height: 10.h,),
-                  Text(provider.dataGame?.released ?? "",style: CustomTextStyle.reguler12,),
+                  Text(provider.dataGame?.released ?? "",style: CustomTextStyles.reguler12,),
                 ],
               ),
             );
@@ -46,7 +46,7 @@ class DetailGamePage extends StatelessWidget {
           Widget buttonLocationPicker(){
             return Column(
               children: [
-                Text(provider.locationName ?? "Sedang mencari lokasi....",style: CustomTextStyle.reguler12,),
+                Text(provider.locationName ?? "Sedang mencari lokasi....",style: CustomTextStyles.reguler12,),
                 ButtonPrimary(click: (){
                   provider.locationPicker(context);
                 }, teks: "Pick Location"),
@@ -58,7 +58,7 @@ class DetailGamePage extends StatelessWidget {
           Widget buttonDatePicker(){
             return Column(
               children: [
-                Text(provider.date != null ? Helper().dateTimeToString(waktu: provider.date!) : "Pilih Tanggal",style: CustomTextStyle.reguler12,),
+                Text(provider.date != null ? Helper().dateTimeToString(waktu: provider.date!) : "Pilih Tanggal",style: CustomTextStyles.reguler12,),
                 ButtonPrimary(click: (){
                   provider.datePicker(context);
                 }, teks: "Pick Date"),

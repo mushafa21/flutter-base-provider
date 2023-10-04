@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base_project/model/game_model.dart';
-import 'package:flutter_base_project/style/custom_color.dart';
-import 'package:flutter_base_project/style/custom_text_style.dart';
+import 'package:flutter_base_project/styles/custom_colors.dart';
+import 'package:flutter_base_project/styles/custom_text_styles.dart';
 import 'package:flutter_base_project/ui/detail_game/detail_game_view.dart';
 import 'package:flutter_base_project/widget/image_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +22,7 @@ class GameItem extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(10.w),
         decoration: BoxDecoration(
-          border: Border.all(color: CustomColor.gray400,),
+          border: Border.all(color: CustomColors.gray400,),
           borderRadius: BorderRadius.circular(10.w)
         ),
         margin: EdgeInsets.only(bottom: 10.h),
@@ -30,7 +30,7 @@ class GameItem extends StatelessWidget {
           children: [
             ImageView(url: data.backgroundImage ?? "",width: 50.w,height: 50.w,fit: BoxFit.cover,),
             SizedBox(width: 10.w,),
-            Expanded(child: Text(data.name ?? "",style: CustomTextStyle.semiBold12,))
+            Expanded(child: Text(data.name ?? "",style: CustomTextStyles.semiBold12,))
           ],
         ),
       ),

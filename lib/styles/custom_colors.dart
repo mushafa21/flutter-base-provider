@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-class CustomColor{
+class CustomColors{
   /**
    * Untuk Hex Code
    * # -> 0xFF */

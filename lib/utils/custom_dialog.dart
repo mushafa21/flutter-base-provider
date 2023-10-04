@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_base_project/style/custom_color.dart';
-import 'package:flutter_base_project/style/custom_text_style.dart';
+import 'package:flutter_base_project/styles/custom_colors.dart';
+import 'package:flutter_base_project/styles/custom_text_styles.dart';
 import 'package:flutter_base_project/widget/button_primary.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -147,7 +147,7 @@ class LoadingDialog extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(12.w),
           child: Center(
-            child: Lottie.asset('asset/animation/loading_lottie.json',width: 150.w,height: 150.w,fit: BoxFit.fitHeight),
+            child: Lottie.asset('assets/animations/loading_lottie.json',width: 150.w,height: 150.w,fit: BoxFit.fitHeight),
           ),
         ),
       ),
@@ -181,11 +181,11 @@ class SuccessDialog extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(asset ?? "asset/images/img_dialog_success.png",height: 200.h,),
+              Image.asset(asset ?? "assets/images/img_dialog_success.png",height: 200.h,),
               SizedBox(height: 15.h,),
-              Text(title ?? "Success",style: CustomTextStyle.bold18,textAlign: TextAlign.center,),
+              Text(title ?? "Success",style: CustomTextStyles.bold18,textAlign: TextAlign.center,),
               SizedBox(height: 10.h,),
-              Text(message,style: CustomTextStyle.reguler12,textAlign: TextAlign.center,),
+              Text(message,style: CustomTextStyles.reguler12,textAlign: TextAlign.center,),
               SizedBox(height: 20.h,),
               ButtonPrimary(click: (){
                 Navigator.pop(context);
@@ -226,11 +226,11 @@ class MessageDialog extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(asset ?? "asset/images/img_dialog_general.png",height: 200.h,),
+              Image.asset(asset ?? "assets/images/img_dialog_general.png",height: 200.h,),
               SizedBox(height: 15.h,),
-              Text(title ?? "Success",style: CustomTextStyle.bold18,textAlign: TextAlign.center,),
+              Text(title ?? "Success",style: CustomTextStyles.bold18,textAlign: TextAlign.center,),
               SizedBox(height: 10.h,),
-              Text(message,style: CustomTextStyle.reguler12,textAlign: TextAlign.center,),
+              Text(message,style: CustomTextStyles.reguler12,textAlign: TextAlign.center,),
               SizedBox(height: 20.h,),
               ButtonPrimary(click: (){
                 Navigator.pop(context);
@@ -277,13 +277,13 @@ class ErrorDialog extends StatelessWidget {
                 children: [
                   FaIcon(FontAwesomeIcons.circleInfo,size: 16.w,),
                   SizedBox(width: 10.w,),
-                  Text(title ?? "Oops! Something went wrong",style: CustomTextStyle.bold14.copyWith(color: CustomColor.error500),textAlign: TextAlign.center,),
+                  Text(title ?? "Oops! Something went wrong",style: CustomTextStyles.bold14.copyWith(color: CustomColors.error500),textAlign: TextAlign.center,),
                 ],
               ),
               SizedBox(height: 15.h,),
-              Image.asset(asset ?? "asset/images/img_dialog_error.png",height: 200.h,),
+              Image.asset(asset ?? "assets/images/img_dialog_error.png",height: 200.h,),
               SizedBox(height: 10.h,),
-              Text(message,style: CustomTextStyle.reguler12,textAlign: TextAlign.center,),
+              Text(message,style: CustomTextStyles.reguler12,textAlign: TextAlign.center,),
               SizedBox(height: 20.h,),
               Align(
                 alignment: Alignment.centerRight,
@@ -293,7 +293,7 @@ class ErrorDialog extends StatelessWidget {
                     onTap!();
                   }
 
-                }, teks: buttonText ?? "Close",height: 0,width: 0,color: CustomColor.error100,textColor: CustomColor.error500,),
+                }, teks: buttonText ?? "Close",height: 0,width: 0,color: CustomColors.error100,textColor: CustomColors.error500,),
               )
             ],
           ),
@@ -333,13 +333,13 @@ class WarningDialog extends StatelessWidget {
                 children: [
                   FaIcon(FontAwesomeIcons.circleInfo,size: 16.w,),
                   SizedBox(width: 10.w,),
-                  Text(title ?? "Oops! Something went wrong",style: CustomTextStyle.bold14.copyWith(color: CustomColor.error500),textAlign: TextAlign.center,),
+                  Text(title ?? "Oops! Something went wrong",style: CustomTextStyles.bold14.copyWith(color: CustomColors.error500),textAlign: TextAlign.center,),
                 ],
               ),
               SizedBox(height: 15.h,),
-              Image.asset(asset ?? "asset/images/img_dialog_warning.png",height: 200.h,),
+              Image.asset(asset ?? "assets/images/img_dialog_warning.png",height: 200.h,),
               SizedBox(height: 10.h,),
-              Text(message,style: CustomTextStyle.reguler12,textAlign: TextAlign.center,),
+              Text(message,style: CustomTextStyles.reguler12,textAlign: TextAlign.center,),
               SizedBox(height: 20.h,),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -353,7 +353,7 @@ class WarningDialog extends StatelessWidget {
                       }
 
                     } ,
-                      child: Text(cancelButtonText ?? "Cancel",style: CustomTextStyle.reguler12.copyWith(color: CustomColor.error500),)),
+                      child: Text(cancelButtonText ?? "Cancel",style: CustomTextStyles.reguler12.copyWith(color: CustomColors.error500),)),
                   SizedBox(width: 30.w,),
                   ButtonPrimary(click: (){
                     Navigator.pop(context);
@@ -361,7 +361,7 @@ class WarningDialog extends StatelessWidget {
                       onTap!();
                     }
 
-                  }, teks: confirmButtonText ?? "Ok",height: 0,width: 0,color: CustomColor.error100,textColor: CustomColor.error500,),
+                  }, teks: confirmButtonText ?? "Ok",height: 0,width: 0,color: CustomColors.error100,textColor: CustomColors.error500,),
 
                 ],
               )
@@ -401,11 +401,11 @@ class ChoiceDialog extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(title ?? "Confirmation",style: CustomTextStyle.bold18,textAlign: TextAlign.center,),
+              Text(title ?? "Confirmation",style: CustomTextStyles.bold18,textAlign: TextAlign.center,),
               SizedBox(height: 15.h,),
-              Image.asset(asset ?? "asset/images/img_dialog_choice.png",height: 200.h,),
+              Image.asset(asset ?? "assets/images/img_dialog_choice.png",height: 200.h,),
               SizedBox(height: 10.h,),
-              Text(message,style: CustomTextStyle.reguler12,textAlign: TextAlign.center,),
+              Text(message,style: CustomTextStyles.reguler12,textAlign: TextAlign.center,),
               SizedBox(height: 20.h,),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -417,7 +417,7 @@ class ChoiceDialog extends StatelessWidget {
                       onTapCancel!();
                     }
 
-                  }, teks: cancelButtonText ?? "Cancel",height: 0,width: 0,color: CustomColor.primary100,textColor: CustomColor.gray500,),
+                  }, teks: cancelButtonText ?? "Cancel",height: 0,width: 0,color: CustomColors.primary100,textColor: CustomColors.gray500,),
                   SizedBox(width: 20.w,),
                   ButtonPrimary(click: (){
                     Navigator.pop(context);

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f2cc524-a0ad-486b-9b87-e7401d26098b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flutter_base_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/animation/loading_lottie.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/animations/loading_lottie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/font/PlusJakartaSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/PlusJakartaSans-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/font/PlusJakartaSans-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/PlusJakartaSans-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/font/PlusJakartaSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/PlusJakartaSans-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/font/PlusJakartaSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/PlusJakartaSans-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_dialog_choice.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_dialog_choice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_dialog_error.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_dialog_error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_dialog_general.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_dialog_general.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_dialog_success.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_dialog_success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_dialog_warning.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_dialog_warning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/img_null.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_null.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/style/custom_color.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/custom_colors.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/style/custom_text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/custom_text_styles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/detail_game/detail_game_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/detail_game/detail_game_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/detail_game/widget/detail_game_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/detail_game/widget/detail_game_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/home/widget/game_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/widget/game_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/custom_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/custom_dialog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/log.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/log.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/picker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/button_border.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/button_border.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/button_primary.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/button_primary.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/circle_image_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/circle_image_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/image_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/image_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/view_kosong.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/view_kosong.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WJSY9sA5KkAFUitrSeX5LQ77Rg" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2cc524-a0ad-486b-9b87-e7401d26098b" name="Changes" comment="" />
+      <created>1696449234531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696449234531</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

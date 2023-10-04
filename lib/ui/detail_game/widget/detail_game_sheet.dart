@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../style/custom_color.dart';
-import '../../../style/custom_text_style.dart';
+import '../../../styles/custom_colors.dart';
+import '../../../styles/custom_text_styles.dart';
 import '../../../widget/button_primary.dart';
 
 
@@ -24,7 +24,7 @@ class DetailGameSheet extends StatelessWidget {
             bottom: MediaQuery.of(context).viewInsets.bottom),
         child: Container(
           padding: EdgeInsets.all(20.w),
-          color: CustomColor.white,
+          color: CustomColors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -35,17 +35,17 @@ class DetailGameSheet extends StatelessWidget {
                   height: 5.w,
                   margin: EdgeInsets.all(20.h),
                   decoration: BoxDecoration(
-                      color: CustomColor.gray100,
+                      color: CustomColors.gray100,
                       borderRadius: BorderRadius.circular(3.w)),
                 ),
               ),
 
-              Image.asset(image != null ? image! : "asset/images/img_empty.png",width: double.infinity,),
+              Image.asset(image != null ? image! : "assets/images/img_empty.png",width: double.infinity,),
               SizedBox(height: 15.h,),
-              Text(title,style: CustomTextStyle.semiBold18,),
+              Text(title,style: CustomTextStyles.semiBold18,),
               SizedBox(height: 5.h,),
 
-              Text(message,style: CustomTextStyle.reguler12.copyWith(color: CustomColor.gray400),),
+              Text(message,style: CustomTextStyles.reguler12.copyWith(color: CustomColors.gray400),),
               SizedBox(height: 20.h,),
               ButtonPrimary(click: (){
                 if(callback != null){

@@ -12,8 +12,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:location/location.dart';
 
-import '../style/custom_color.dart';
-import '../style/custom_text_style.dart';
+import '../styles/custom_colors.dart';
+import '../styles/custom_text_styles.dart';
 import '../widget/button_primary.dart';
 import 'config.dart';
 import 'helper.dart';
@@ -38,7 +38,7 @@ class Picker{
                   bottom: MediaQuery.of(context).viewInsets.bottom),
               child: Container(
                 padding: EdgeInsets.all(15.w),
-                color: CustomColor.white,
+                color: CustomColors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
@@ -48,7 +48,7 @@ class Picker{
                         width: 70.w,
                         height: 6.h,
                         decoration: BoxDecoration(
-                            color: CustomColor.gray400,
+                            color: CustomColors.gray400,
                             borderRadius: BorderRadius.circular(10.r)),
                       ),
                     ),
@@ -57,10 +57,10 @@ class Picker{
                     ),
                     Text(
                       "Pilih Media",
-                      style: CustomTextStyle.bold18,
+                      style: CustomTextStyles.bold18,
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         child: ListTile(
                           onTap: () async {
@@ -71,14 +71,14 @@ class Picker{
                           },
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.image, color: CustomColor.primary500),
-                          title: Text("Foto",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.image, color: CustomColors.primary500),
+                          title: Text("Foto",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         onTap: () async {
                           Navigator.pop(context);
@@ -89,8 +89,8 @@ class Picker{
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.video, color: CustomColor.primary500),
-                          title: Text("Video",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.video, color: CustomColors.primary500),
+                          title: Text("Video",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
@@ -129,7 +129,7 @@ class Picker{
                   bottom: MediaQuery.of(context).viewInsets.bottom),
               child: Container(
                 padding: EdgeInsets.all(15.w),
-                color: CustomColor.white,
+                color: CustomColors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
@@ -139,7 +139,7 @@ class Picker{
                         width: 70.w,
                         height: 6.h,
                         decoration: BoxDecoration(
-                            color: CustomColor.gray400,
+                            color: CustomColors.gray400,
                             borderRadius: BorderRadius.circular(10.r)),
                       ),
                     ),
@@ -148,10 +148,10 @@ class Picker{
                     ),
                     Text(
                       "Pilih Pengambilan Video",
-                      style: CustomTextStyle.bold18,
+                      style: CustomTextStyles.bold18,
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         child: ListTile(
                           onTap: () async {
@@ -160,14 +160,14 @@ class Picker{
                           },
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.camera, color: CustomColor.primary500),
-                          title: Text("Kamera",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.camera, color: CustomColors.primary500),
+                          title: Text("Kamera",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         onTap: () async {
                           Navigator.pop(context);
@@ -176,8 +176,8 @@ class Picker{
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.solidFolderOpen, color: CustomColor.primary500),
-                          title: Text("Galeri",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.solidFolderOpen, color: CustomColors.primary500),
+                          title: Text("Galeri",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
@@ -217,7 +217,7 @@ class Picker{
                   bottom: MediaQuery.of(context).viewInsets.bottom),
               child: Container(
                 padding: EdgeInsets.all(15.w),
-                color: CustomColor.white,
+                color: CustomColors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
@@ -227,7 +227,7 @@ class Picker{
                         width: 70.w,
                         height: 6.h,
                         decoration: BoxDecoration(
-                            color: CustomColor.gray400,
+                            color: CustomColors.gray400,
                             borderRadius: BorderRadius.circular(10.r)),
                       ),
                     ),
@@ -236,10 +236,10 @@ class Picker{
                     ),
                     Text(
                       "Pilih Pengambilan Gambar",
-                      style: CustomTextStyle.bold18,
+                      style: CustomTextStyles.bold18,
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         child: ListTile(
                           onTap: () async {
@@ -248,14 +248,14 @@ class Picker{
                           },
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.camera, color: CustomColor.primary500),
-                          title: Text("Kamera",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.camera, color: CustomColors.primary500),
+                          title: Text("Kamera",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
                     ),
                     Material(
-                      color: CustomColor.transparant,
+                      color: CustomColors.transparant,
                       child: InkWell(
                         onTap: () async {
                           Navigator.pop(context);
@@ -264,8 +264,8 @@ class Picker{
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
                           horizontalTitleGap: 0,
-                          leading: FaIcon(FontAwesomeIcons.solidFolderOpen, color: CustomColor.primary500),
-                          title: Text("Galeri",style: CustomTextStyle.semiBold12,),
+                          leading: FaIcon(FontAwesomeIcons.solidFolderOpen, color: CustomColors.primary500),
+                          title: Text("Galeri",style: CustomTextStyles.semiBold12,),
 
                         ),
                       ),
@@ -498,7 +498,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
               elevation: 0,
               title: Text(
                 "Pilih Lokasi",
-                style: CustomTextStyle.semiBold18,
+                style: CustomTextStyles.semiBold18,
               ),
               automaticallyImplyLeading: true),
           body: Stack(children: [
@@ -538,7 +538,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
               //picker image on google map
               child: FaIcon(
                 FontAwesomeIcons.locationDot,
-                color: CustomColor.primary500,
+                color: CustomColors.primary500,
                 size: 50.w,
               ),
             ),
@@ -555,7 +555,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
                           alignment: Alignment.centerRight,
                           child: Material(
                               borderRadius: BorderRadius.circular(10.r),
-                              color: CustomColor.primary500,
+                              color: CustomColors.primary500,
                               child: IconButton(
                                 icon: FaIcon(FontAwesomeIcons.locationCrosshairs),
                                 color: Colors.white,
@@ -568,7 +568,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
                     ),
                     Container(
                         decoration: BoxDecoration(
-                            color: CustomColor.white,
+                            color: CustomColors.white,
                             borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(10.r),
                                 topLeft: Radius.circular(10.r))),
@@ -577,10 +577,10 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
                         child: Column(
                           children: [
                             ListTile(
-                              leading:FaIcon(FontAwesomeIcons.mapLocationDot,color: CustomColor.primary500,size: 25.w,),
+                              leading:FaIcon(FontAwesomeIcons.mapLocationDot,color: CustomColors.primary500,size: 25.w,),
                               title: Text(
                                 location,
-                                style: CustomTextStyle.reguler12,
+                                style: CustomTextStyles.reguler12,
                               ),
                               dense: true,
                             ),

@@ -12,7 +12,7 @@ class ImageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CachedNetworkImage(imageUrl: url ,width: width,height: height,fit: fit,memCacheHeight: 400, placeholder: (context,url) => Center(child: const CircularProgressIndicator()),
-      errorWidget: (context,url,error) => Image.asset(errorFile ?? "asset/images/img_null.png",fit: fit,),
+      errorWidget: (context,url,error) => Image.asset(errorFile ?? "assets/images/img_null.png",fit: fit,),
     );
   }
 }
